@@ -27,7 +27,6 @@ if (isset($_GET['del']))
                 $articles = $DB->query('SELECT * FROM articles WHERE id IN ('.implode(',',$ids).')');
                 
                 foreach ($articles as $article):
-                    var_dump($article);
                     ?>
                 
                 <div class="ligne col-md-12">
